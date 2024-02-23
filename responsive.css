@@ -1,0 +1,83 @@
+﻿/* Responsive Styles for Mobile */
+@media only screen and (max-width: 767px) {
+    nav .desktop {
+        display: none;
+    }
+
+    nav .mobile {
+        display: block;
+    }
+
+    header h1 {
+        animation: none;
+    }
+
+    #mountain-photos .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+        grid-gap: 8px;
+    }
+
+        #mountain-photos .grid-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    #mountain-facts > .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+        #mountain-facts > .flex-container figure {
+            margin-left: 0;
+            margin-bottom: 16px;
+        }
+
+        #mountain-facts > .flex-container figcaption {
+            margin-top: 0;
+        }
+
+    #section-video .flex-container {
+        align-items: center;
+    }
+
+    iframe {
+        max-width: 100%;
+    }
+
+    #form-section form {
+        max-width: 100%;
+        margin: 0 16px;
+    }
+}
+
+/* Responsive Styles for Tablet and Desktop */
+@media only screen and (min-width: 768px) {
+    #mountain-facts > .flex-container {
+        display: flex;
+        align-items: center;
+    }
+
+        #mountain-facts > .flex-container figure {
+            margin-left: auto;
+        }
+
+            #mountain-facts > .flex-container figure img {
+                height: 400px;
+            }
+
+        #mountain-facts > .flex-container figcaption {
+            text-align: center;
+            margin-top: 16px;
+        }
+
+    #mountain-photos .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    }
+
+        #mountain-photos .grid-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+}

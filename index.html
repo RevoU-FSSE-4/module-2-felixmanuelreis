@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="A web application to show photos of mountains in Timor-Leste" />
+    <meta name="keywords" content="HTML, CSS" />
+    <meta name="author" content="Your Name" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mountains in Timor-Leste</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Custom Stylesheets -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <!-- Favicon -->
+    <link rel="icon" href="icons/mountain-icon.png" type="image/x-icon" />
+</head>
+<body>
+    <nav>
+        <span class="mobile">
+            <img src="icons/burger_icon.jpg" alt="Hamburger Icon" />
+        </span>
+        <span class="relative-container">
+            <img src="icons/mount_icon.jpg" alt="Mountain Icon" />
+            <b>Mountain Explorer</b>
+        </span>
+        <span id="dark-mode-switch">
+            <b>Dark Mode</b>
+            <label class="switch">
+                <input id="checkbox-dark-mode" type="checkbox" />
+                <span class="slider round"></span>
+            </label>
+        </span>
+    </nav>
+    <header class="full-screen" id="header">
+        <h1>Mountains in Timor-Leste</h1>
+        <p>Explore the breathtaking beauty of Timor-Leste's mountains.</p>
+    </header>
+    <main>
+        <section id="mountain-photos">
+            <h2>Mountain Photos</h2>
+            <div class="grid-container">
+                <div class="mountain-photo-item" id="item-1">
+                    <img src="images/mountain_1.jpg" alt="Mountain 1" />
+                </div>
+                <div class="mountain-photo-item" id="item-2">
+                    <img src="images/mountain_2.jpg" alt="Mountain 2" />
+                </div>
+                <div class="mountain-photo-item" id="item-3">
+                    <img src="images/mountain_3.jpg" alt="Mountain 3" />
+                </div>
+                <div class="mountain-photo-item" id="item-4">
+                    <img src="images/mountain_4.jpg" alt="Mountain 4" />
+                </div>
+                <div class="mountain-photo-item" id="item-5">
+                    <img src="images/mountain_5.jpg" alt="Mountain 5" />
+                </div>
+                <div class="mountain-photo-item" id="item-7">
+                    <img src="images/mountain_7.jpg" alt="Mountain 7" />
+                </div>
+            </div>
+        </section>
+        <section id="mountain-facts">
+            <h2>Facts about Timor-Leste Mountains</h2>
+            <div class="flex-container">
+                <ul>
+                    <li>Timor-Leste is home to several mountain ranges.</li>
+                    <li>Mount Ramelau is the highest peak in Timor-Leste.</li>
+                    <li>The mountains offer stunning views and hiking opportunities.</li>
+                </ul>
+                <figure>
+                    <img src="images/mountain_6.jpg" alt="Mountain 6" />
+                    <figcaption>A view from one of the mountains in Timor-Leste.</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section id="mountain-video">
+            <h2>Explore Timor-Leste's Mountains</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/hZRqVmel6PU" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section id="join-club">
+            <h2>Join Our Mountain Explorer Club!</h2>
+            <form action="#">
+                <fieldset>
+                    <legend>Personal Information:</legend>
+                    <div>
+                        <label for="full-name">Full Name:</label>
+                        <input type="text" id="full-name" required />
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" required />
+                    </div>
+                    <div>
+                        <label for="country">Country:</label>
+                        <input type="text" id="country" required />
+                    </div>
+                    <div>
+                        <p>Are you interested in mountain climbing?</p>
+                        <input type="radio" id="yes" name="interest" value="Yes" />
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="no" name="interest" value="No" />
+                        <label for="no">No</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Additional Information:</legend>
+                    <div>
+                        <label for="message">Why do you love mountains?</label>
+                        <textarea id="message" rows="3"></textarea>
+                    </div>
+                    <div>
+                        <label for="photo">Upload a photo of your favorite mountain:</label>
+                        <input type="file" id="photo" accept="image/*" />
+                    </div>
+                </fieldset>
+                <button type="submit">Join Now</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
