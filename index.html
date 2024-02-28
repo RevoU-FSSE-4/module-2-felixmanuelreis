@@ -2,9 +2,10 @@
 <html>
 <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="A web application to show photos of mountains in Timor-Leste" />
     <meta name="keywords" content="HTML, CSS" />
-    <meta name="author" content="Your Name" />
+    <meta name="author" content="Felix Silva" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mountains in Timor-Leste</title>
     <!-- Google Font -->
@@ -39,7 +40,7 @@
     </header>
     <main>
         <section id="mountain-photos">
-            <h2>Mountain Photos</h2>
+            <h2 class="section-heading">Mountain Photos</h2>
             <div class="grid-container">
                 <div class="mountain-photo-item" id="item-1">
                     <img src="images/mountain_1.jpg" alt="Mountain 1" />
@@ -64,16 +65,19 @@
         <section id="mountain-facts">
             <h2>Facts about Timor-Leste Mountains</h2>
             <div class="flex-container">
-                <ul>
+                <ol class="list">
                     <li>Timor-Leste is home to several mountain ranges.</li>
                     <li>Mount Ramelau is the highest peak in Timor-Leste.</li>
                     <li>The mountains offer stunning views and hiking opportunities.</li>
-                </ul>
-                <figure>
-                    <img src="images/mountain_6.jpg" alt="Mountain 6" />
-                    <figcaption>A view from one of the mountains in Timor-Leste.</figcaption>
-                </figure>
+                </ol>
             </div>
+
+            <picture class="picture-container">>
+                <source media="(min-width:650px)" srcset="images/mountain_8.jpg">
+                <source media="(min-width:465px)" srcset="images/mountain_9.jpg">
+                <img src="images/mountain_6.jpg" alt="Mountain 6" style="width:auto;">
+            </picture>
+
         </section>
         <section id="mountain-video">
             <h2>Explore Timor-Leste's Mountains</h2>
@@ -94,11 +98,22 @@
                         <label for="email">Email:</label>
                         <input type="email" id="email" required />
                     </div>
-                    <div>
+                    <div class: field>
                         <label for="country">Country:</label>
-                        <input type="text" id="country" required />
+                        <select id="country" name="country" required>
+                            <option value="">Select Country</option>
+                            <option value="ID">Indonesia</option>
+                            <option value="TL">Timor-Leste</option>
+                            <option value="AF">Afghanistan</option>
+                            <option value="AL">Albania</option>
+                            <option value="DZ">Algeria</option>
+                            <option value="AS">American Samoa</option>
+                            <option value="AD">Andorra</option>
+                            <option value="AO">Angola</option>
+                            <option value="AI">Anguilla</option>
+                        </select>
                     </div>
-                    <div>
+                    <div class="radio-group">
                         <p>Are you interested in mountain climbing?</p>
                         <input type="radio" id="yes" name="interest" value="Yes" />
                         <label for="yes">Yes</label>
