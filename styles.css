@@ -122,7 +122,6 @@ h2 {
 }
 
 #item-7 {
-    grid-row-end: span 2;
     grid-column-end: span 1;
 }
 
