@@ -88,7 +88,8 @@ h2 {
 /* Grid Layout for Photos */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 15px;
 }
 
@@ -181,7 +182,7 @@ button[type="submit"] {
     }
 
 /* Responsive Styles for Tablet and Desktop */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 600px) {
     /* Adjustments for the mountain-facts section */
     #mountain-facts ul {
         list-style-type: disc; /* Use disc for filled bullets */
