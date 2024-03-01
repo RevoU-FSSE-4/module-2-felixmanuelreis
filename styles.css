@@ -116,7 +116,7 @@ h2 {
 }
 
 #item-7 {
-    grid-row-end: span 2;
+    grid-row-end: span 1;
 }
 
 #item-5 {
@@ -279,3 +279,123 @@ select {
     margin-bottom: 75px;
 }
 
+/* Dark/Light Mode Styles */
+.dark-mode {
+    background-color: #333333;
+    color: white;
+}
+
+#checkbox-dark-mode {
+    display: none;
+}
+
+    #checkbox-dark-mode:checked ~ body {
+        background-color: #333333;
+        color: white;
+    }
+
+    #checkbox-dark-mode:checked ~ nav {
+        background-color: #222222;
+    }
+
+        #checkbox-dark-mode:checked ~ nav a {
+            color: white;
+        }
+
+    #checkbox-dark-mode:checked ~ header {
+        background-color: #222222;
+    }
+
+    #checkbox-dark-mode:checked ~ .grid-container .mountain-photo-item {
+        border: 1px solid white;
+    }
+
+    #checkbox-dark-mode:checked ~ .picture-container {
+        color: white;
+    }
+
+    #checkbox-dark-mode:checked ~ .section-heading {
+        color: white;
+    }
+
+    #checkbox-dark-mode:checked ~ .field label {
+        color: white;
+    }
+
+    #checkbox-dark-mode:checked ~ .field input[type="text"],
+    #checkbox-dark-mode:checked ~ .field input[type="email"],
+    #checkbox-dark-mode:checked ~ .field textarea {
+        background-color: white;
+        color: black;
+    }
+
+    #checkbox-dark-mode:checked ~ #join-club {
+        background-color: black;
+        color: white;
+    }
+
+        #checkbox-dark-mode:checked ~ #join-club form {
+            border: 1px solid white;
+        }
+
+    #checkbox-dark-mode:checked ~ .radio-group input[type="radio"] {
+        border: 1px solid white;
+    }
+
+    #checkbox-dark-mode:checked ~ .radio-group label {
+        color: white;
+    }
+
+    #checkbox-dark-mode:checked ~ .list li {
+        color: white;
+    }
+
+    #checkbox-dark-mode:checked ~ .video-container iframe {
+        border: 1px solid white;
+    }
+
+/* Switch Styles */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+}
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        transition: 0.4s;
+    }
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+    input:checked + .slider:before {
+        transform: translateX(26px);
+    }
+
+.slider.round {
+    border-radius: 34px;
+}
+
+    .slider.round:before {
+        border-radius: 50%;
+    }
