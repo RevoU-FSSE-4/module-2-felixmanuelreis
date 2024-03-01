@@ -126,10 +126,10 @@ h2 {
     grid-column-end: span 1;
 }
 
-/*#item-5 {
+#item-5 {
     grid-column-end: span 1;
-    grid-row-end: span 1;
-}*/
+    grid-row-end: span 3;
+}
 
 /* Form Styles */
 fieldset {
