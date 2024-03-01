@@ -117,7 +117,7 @@ h2 {
 }
 
 #item-4 {
-    grid-column-end: span 2;
+    grid-column-end: span 1;
     grid-row-end: span 1;
 }
 
