@@ -24,6 +24,27 @@ This website is dedicated to showcasing the stunning mountains of Timor-Leste an
 ## Installation
 No installation is required to access the website. Simply open the provided link in your web browser to start exploring the mountains of Timor-Leste.
 
+## Deployment Steps (Steps that the aspiring developer has taken to deploy the project)
+
+1. Get a Customized Domain:
+   - Purchase a domain name from a domain registrar such as Niagahoster.
+   - ![Get Customized Domain](images/get_customized_domain.png)
+
+2. Configure DNS:
+   - Log in to your domain registrar account.
+   - Configure the DNS settings to point to Netlify's nameservers.
+   - ![Configure DNS](images/configure_dns.png)
+
+3. Deploy on Netlify:
+   - Upload your website files to a Git repository.
+   - Connect the repository to Netlify.
+   - Use the custom domain settings in Netlify to link your domain to the deployed website.
+   - ![Deploy on Netlify](images/deploy_on_netlify.png)
+
+4. Access:
+   - You can access the website at [mountainmor.online](https://mountainmor.online).
+
+
 ## Contributing
 If you have any suggestions or would like to contribute to the website, please feel free to contact us or submit a pull request.
 
