@@ -29,7 +29,7 @@ No installation is required to access the website. Simply open the provided link
 1. Get a Customized Domain:
    - Purchase a domain name from a domain registrar such as Niagahoster.
    - ![Get Customized Domain](images/get_customized_domain.png)
-   - ![Add Domain to Netlify DNS](images/add_domain_to_netily_dnss.png)
+   - ![Add Domain to Netlify DNS](images/add_domain_to_netlify_dnss.png)
 
 2. Configure DNS:
    - Log in to your domain registrar account.
