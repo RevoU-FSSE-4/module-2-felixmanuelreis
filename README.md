@@ -41,7 +41,7 @@ No installation is required to access the website. Simply open the provided link
    - Upload your website files to a Git repository.
    - Connect the repository to Netlify.
    - Use the custom domain settings in Netlify to link your domain to the deployed website.
-   - ![Deploy from Github](images/deploy_the_project_from_github.png)
+   - ![Deploy from Github](images/deploy_the_project_from_github.jpg)
    - ![Deploy from Github](images/deploy_the_project_from_github_2.png)
    - ![Deploy to Netlify](images/deployed.png)
    - ![Deploy on Netlify](images/deploy_on_netlify.png)
