@@ -29,16 +29,21 @@ No installation is required to access the website. Simply open the provided link
 1. Get a Customized Domain:
    - Purchase a domain name from a domain registrar such as Niagahoster.
    - ![Get Customized Domain](images/get_customized_domain.png)
+   - ![Add Domain to Netlify DNS](images/add_domain_to_netily_dnss)
 
 2. Configure DNS:
    - Log in to your domain registrar account.
    - Configure the DNS settings to point to Netlify's nameservers.
+   - ![DNS Setting](images/dnss_setting)
    - ![Configure DNS](images/configure_dns.png)
 
 3. Deploy on Netlify:
    - Upload your website files to a Git repository.
    - Connect the repository to Netlify.
    - Use the custom domain settings in Netlify to link your domain to the deployed website.
+   - ![Deploy from Github](images/deploy_the_project_from_github)
+   - ![Deploy from Github](images/deploy_the_project_from_github_2_)
+   - ![Deploy to Netlify](images/deployed)
    - ![Deploy on Netlify](images/deploy_on_netlify.png)
 
 4. Access:
